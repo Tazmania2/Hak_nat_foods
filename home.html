@@ -1,0 +1,74 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Natural Food Retailers</title>
+  <link rel="stylesheet" href="home.css">
+  <script type="module" src="home.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <div id="menu" class="menu hidden">
+      <a href="home.html">Home</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="shop.html">Shop</a>
+      <a href="quiz.html">Quiz</a>
+      <hr>
+      <a href="#">MSDynamics</a>
+      <a href="art.html">ART-Docebo</a>
+      <a href="#">Instagram</a>
+      <a href="#">HigherLogic</a>
+      <a href="#">Microsoft Forms</a>
+      <hr>
+      <a href="#" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <main class="home-container">
+    <section class="player-profile">
+      <img id="player-avatar" src="avatar_placeholder.png" alt="Player Avatar" class="avatar">
+      <h1>Welcome, <span id="player-name">Player</span>!</h1>
+    </section>
+
+    <section class="status-section">
+      <h2>Your Status</h2>
+      <div class="status-grid">
+        <div class="status-card">
+          <h3>Total Points</h3>
+          <p id="total-points">0</p>
+        </div>
+        <div class="status-card">
+          <h3>Total Challenges</h3>
+          <p id="total-challenges">0</p>
+        </div>
+        <div class="status-card">
+          <h3>Level Progress</h3>
+          <p id="level-progress">0%</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2>Your Team</h2>
+      <div class="team-card">
+        <img id="team-avatar" src="team_placeholder.png" alt="Team Avatar" class="avatar-small">
+        <p id="team-name">No Team</p>
+      </div>
+    </section>
+
+    <section class="edit-info-section">
+      <h2>Edit Your Info</h2>
+      <form id="edit-info-form">
+        <input type="text" id="edit-name" placeholder="Name">
+        <input type="email" id="edit-email" placeholder="Email">
+        <button type="submit" class="btn-primary">Save</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

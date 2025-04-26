@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges - Natural Food Retailers</title>
+  <link rel="stylesheet" href="challenges.css">
+  <script type="module" src="challenges.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <div id="menu" class="menu hidden">
+      <a href="home.html">Home</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="shop.html">Shop</a>
+      <a href="quiz.html">Quiz</a>
+      <hr>
+      <a href="#">MSDynamics</a>
+      <a href="art.html">ART-Docebo</a>
+      <a href="#">Instagram</a>
+      <a href="#">HigherLogic</a>
+      <a href="#">Microsoft Forms</a>
+      <hr>
+      <a href="#" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Challenges</h1>
+    <input type="text" id="search-bar" placeholder="Search challenges...">
+    <select id="filter-status">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="incomplete">Incomplete</option>
+    </select>
+  </header>
+
+  <main>
+    <div id="challenges-list" class="challenge-grid"></div>
+  </main>
+</body>
+</html>

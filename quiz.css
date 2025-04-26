@@ -1,0 +1,159 @@
+/* quiz.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  .navbar {
+    background: #234d20;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .menu {
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu.hidden {
+    display: none;
+  }
+  
+  .menu a {
+    color: #234d20;
+    text-decoration: none;
+    margin: 0.5rem 0;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header select {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  #quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .quiz-question {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-question h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .quiz-options label {
+    background: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-options label:hover {
+    background-color: #ddd;
+  }
+  
+  #submit-quiz {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-quiz:hover {
+    background-color: #45a049;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  nav {
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  nav .internal-links,
+  nav .external-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #45a049;
+  }

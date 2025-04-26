@@ -1,0 +1,117 @@
+/* ranking.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+  }
+  
+  .navbar {
+    background: #234d20;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .menu {
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu.hidden {
+    display: none;
+  }
+  
+  .menu a {
+    color: #234d20;
+    text-decoration: none;
+    margin: 0.5rem 0;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header .controls {
+    margin-top: 1rem;
+  }
+  
+  header select {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  #leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  #leaderboard th, #leaderboard td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  #leaderboard th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #leaderboard tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #leaderboard tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  nav {
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  

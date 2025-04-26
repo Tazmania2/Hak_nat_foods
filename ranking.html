@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking - Natural Food Retailers</title>
+  <link rel="stylesheet" href="ranking.css">
+  <script type="module" src="ranking.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <div id="menu" class="menu hidden">
+      <a href="home.html">Home</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="shop.html">Shop</a>
+      <a href="quiz.html">Quiz</a>
+      <hr>
+      <a href="#">MSDynamics</a>
+      <a href="art.html">ART-Docebo</a>
+      <a href="#">Instagram</a>
+      <a href="#">HigherLogic</a>
+      <a href="#">Microsoft Forms</a>
+      <hr>
+      <a href="#" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Leaderboard</h1>
+    <div class="controls">
+      <select id="type-filter">
+        <option value="player">Players</option>
+        <option value="team">Teams</option>
+      </select>
+      <select id="time-filter">
+        <option value="all">All Time</option>
+        <option value="season">Season</option>
+        <option value="30days">Last 30 Days</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <table id="leaderboard">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Leaders will be injected here -->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

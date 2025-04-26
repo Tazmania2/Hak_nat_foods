@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Natural Food Retailers</title>
+  <link rel="stylesheet" href="quiz.css">
+  <script type="module" src="quiz.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <div id="menu" class="menu hidden">
+      <a href="home.html">Home</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="ranking.html">Ranking</a>
+      <a href="shop.html">Shop</a>
+      <a href="quiz.html">Quiz</a>
+      <hr>
+      <a href="#">MSDynamics</a>
+      <a href="art.html">ART-Docebo</a>
+      <a href="#">Instagram</a>
+      <a href="#">HigherLogic</a>
+      <a href="#">Microsoft Forms</a>
+      <hr>
+      <a href="#" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Quiz Center</h1>
+    <select id="quiz-selector">
+      <option value="curso">Curso</option>
+      <option value="680d22a72327f74f3a37d8d1">Other Quiz</option>
+    </select>
+  </header>
+
+  <main>
+    <div id="quiz-container"></div>
+    <button id="submit-quiz" class="hidden">Submit Answers</button>
+  </main>
+</body>
+</html>
